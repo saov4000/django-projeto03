@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from projapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.home),
+    path('produtos',views.produtos),
+    path('sobrenos',views.sobrenos),
+    path('contato',views.contato)
 ]
