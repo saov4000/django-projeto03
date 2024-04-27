@@ -1,7 +1,19 @@
 {% include "partials/header.html" %}
-<main>
-    <section>
-        <a href="" class="btn-cadastrar">Cadastrar</a>
-    </section>
-</main>
+
+{% block content %}
+    <main>
+        <div class="produtos">
+            {% for produto in produtos %}
+        
+            <div class="produto">
+                <img src="{{produto.imagem.url}}" alt="" width="200">
+                <div class="descricao">{{ produto.descricao}}</div>
+                <div class="preco">{{ produto.preco}} </div>
+                <a href="" class="botao">Comprar</a>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock content%}
+
 {% include "partials/footer.html" %}

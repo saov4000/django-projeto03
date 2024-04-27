@@ -4,8 +4,7 @@ from django.utils import timezone
 class Produto(models.Model):
     descricao = models.CharField(max_length=50,blank=False,null=False)
     preco = models.FloatField(max_length=50,blank=False,null=False)
-    imagem = models.ImageField(default='default.jpg')
-    estoque = models.IntegerField(blank=False,null=False)
+    imagem = models.ImageField(blank=True,upload_to='imagens/')
     created = models.DateTimeField(default=timezone.now)
     updated = models.DateTimeField(default=timezone.now)
 

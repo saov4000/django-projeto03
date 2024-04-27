@@ -38,6 +38,46 @@ nav ul li a:hover{
 }
 main{
     min-height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.produtos{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.produto{
+    margin: 10px;
+    padding: 10px;
+    width: 240px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.produto img{
+    margin: auto;
+}
+.botao{
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 70%;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color:white;
+    text-decoration: none;
+}
+.botao:hover{
+    background-color: rgb(148, 148, 234);
+    color: blue;
 }
 footer{
     background-color: black;
